@@ -213,7 +213,9 @@ body.cursor-active .cursor-dot, body.cursor-active .cursor-ring { opacity: 1; }
   max-width: var(--container); margin: 0 auto; width: 100%;
   overflow: hidden;
 }
-.hero__canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+/* full-page interactive background canvas */
+.bg-canvas { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; }
+main, .nav, .footer { position: relative; z-index: 1; }
 .hero__glow {
   position: absolute; width: 600px; height: 600px; border-radius: 50%;
   background: radial-gradient(circle, var(--accent-glow), transparent 65%);

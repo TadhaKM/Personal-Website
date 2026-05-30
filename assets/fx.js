@@ -102,7 +102,12 @@
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     let w, h, points = [], mouse = { x: -999, y: -999 };
-    const COUNT = reduceMotion ? 28 : Math.min(90, Math.floor(innerWidth / 18));
+    // scale particle count to the full viewport area
+    function targetCount() {
+      if (reduceMotion) return 36;
+      return Math.max(40, Math.min(150, Math.round((innerWidth * innerHeight) / 17000)));
+    }
+    let COUNT = targetCount();
 
     function accentRGB() {
       const c = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
@@ -166,13 +171,10 @@
     }
 
     resize(); seed();
-    addEventListener("resize", () => { resize(); seed(); });
-    const hero = document.getElementById("home");
-    hero.addEventListener("mousemove", (e) => {
-      const r = canvas.getBoundingClientRect();
-      mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top;
-    });
-    hero.addEventListener("mouseleave", () => { mouse.x = -999; mouse.y = -999; });
+    addEventListener("resize", () => { COUNT = targetCount(); resize(); seed(); });
+    // canvas is fixed to the viewport, so client coords map directly
+    addEventListener("mousemove", (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
+    addEventListener("mouseleave", () => { mouse.x = -999; mouse.y = -999; });
     step();
   };
 
