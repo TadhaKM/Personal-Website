@@ -81,6 +81,16 @@ const PORTFOLIO = {
   // type: "work" or "leadership"  (shown as a small label on the node)
   experience: [
     {
+      type: "work",
+      role: "Backend AI Engineer Intern",
+      org: "FlyRank AI",
+      location: "Remote",
+      start: "Jul 2026",
+      end: "Present",
+      points: [],
+      tags: ["Backend", "AI"],
+    },
+    {
       type: "leadership",
       role: "Secretary",
       org: "Claude Builder Club",
