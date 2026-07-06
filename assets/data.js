@@ -25,11 +25,11 @@ const PORTFOLIO = {
       "AI developer",
       "full-stack builder",
       "open-source contributor",
-      "Claude Builder Club secretary",
+      "Backend AI Engineer Intern",
     ],
     blurb:
       "Third-year CS student at Trinity College Dublin building intelligent, " +
-      "well-crafted software — from AI agent platforms to LLM-powered apps. " +
+      "well-crafted software, from AI agent platforms to LLM-powered apps. " +
       "I like shipping things that feel inevitable.",
     // Quick stat chips under the hero CTAs
     meta: [
@@ -51,27 +51,28 @@ const PORTFOLIO = {
   /* ------------------------------------------------------------------- ABOUT */
   about: {
     paragraphs: [
-      "I'm a Computer Science student at <strong>Trinity College Dublin</strong> " +
-        "who spends most of my time building with AI."
-      ,"My favourite work lives where solid engineering meets language models - " +
+      "I'm a Computer Science student at <strong>Trinity College Dublin</strong>, " +
+        "and I spend most of my time building with AI by turning rough ideas into " +
+        "software that actually ships."
+      ,"My favourite work lives where solid engineering meets language models: " +
         "agent orchestration, semantic search, and tools that quietly make hard " +
-        "things easy. ",
+        "things easy. I care about systems that are <strong>fast, honest, and feel " +
+        "inevitable</strong> to use.",
     ],
     // Faux-terminal lines in the About card. Format: { cmd } prints "$ cmd",
     // { out } prints a result line, { ok } prints a green line.
     terminal: [
       { cmd: "whoami" },
-      { out: "tadhagath marepalli — cs student & ai developer" },
+      { out: "tadhagath marepalli · cs student & ai developer" },
       { cmd: "cat focus.txt" },
       { out: "llm integration · agents · full-stack · open source" },
       { cmd: "ls ~/currently" },
-      { out: "trinity-college  claude-builder-club  side-projects/" },
+      { out: "trinity-college internships  side-projects/" },
       { cmd: "echo $STATUS" },
       { ok: "open to internships & collaborations ✓" },
     ],
     // Little fact tiles below the about grid
     facts: [
-      { k: "200+", v: "devs in the community I help run" },
       { k: "7", v: "languages I build in" },
       { k: "∞", v: "ideas in the backlog" },
     ],
@@ -138,14 +139,14 @@ const PORTFOLIO = {
   // highlights (bullet list), links (github/demo, optional).
   projects: [
     {
-      name: "Flowithm — Runtime Memory for AI Agents",
+      name: "Flowithm: Runtime Memory for AI Agents",
       year: "2026",
       blurb:
         "A runtime memory layer that turns tribal knowledge buried in Slack, docs and tickets into structured workflows humans can follow and AI agents can execute.",
       tags: ["Python", "FastAPI", "Supabase", "pgvector", "LLM", "Agents"],
       highlights: [
         "Continuously ingests from Slack, Notion, GitHub, Gmail and Intercom, chunking and embedding content with SHA-256 dedup per org.",
-        "Extracts real workflow specs — triggers, ordered steps, owners, decision rules and approvals — not just summaries.",
+        "Extracts real workflow specs (triggers, ordered steps, owners, decision rules and approvals), not just summaries.",
         "Exposes a public Agent API: `/skills/match` tells an agent how to act, `/skills/check` is a fail-closed guardrail on whether it may.",
         "Stays honest with background loops for drift detection and staleness flagging so agents escalate instead of acting on stale process.",
       ],
@@ -153,7 +154,7 @@ const PORTFOLIO = {
       featured: true,
     },
     {
-      name: "TCD Tickets — Event Ticketing Platform",
+      name: "TCD Tickets: Event Ticketing Platform",
       year: "2025",
       blurb:
         "A production-quality full-stack ticketing platform for Trinity College societies covering the full lifecycle: discovery, booking, payment, check-in and analytics.",
@@ -171,7 +172,7 @@ const PORTFOLIO = {
       name: "IBM MCP Context Forge",
       year: "2025",
       blurb:
-        "Open-source contributions to IBM's MCP conversational gateway — a semantic search system and a DAG-based agent orchestration engine.",
+        "Open-source contributions to IBM's MCP conversational gateway: a semantic search system and a DAG-based agent orchestration engine.",
       tags: ["Python", "FastAPI", "GraphQL", "SQLAlchemy", "Open Source"],
       highlights: [
         "Designed a semantic search system using embeddings + multi-provider LLM APIs, improving tool discovery and retrieval accuracy.",
@@ -183,10 +184,10 @@ const PORTFOLIO = {
       featured: true,
     },
     {
-      name: "Redio — Repo-to-Walkthrough Video",
+      name: "Redio: Repo-to-Walkthrough Video",
       year: "2026",
       blurb:
-        "Turns any public GitHub repo into a short narrated onboarding walkthrough — spoken script, talking-avatar video per section, architecture diagram and a chat grounded in the code. Built at a Cursor hackathon.",
+        "Turns any public GitHub repo into a short narrated onboarding walkthrough: spoken script, talking-avatar video per section, architecture diagram and a chat grounded in the code. Built at a Cursor hackathon.",
       tags: ["React", "Node", "FastAPI", "Claude", "HeyGen", "RAG"],
       highlights: [
         "Ingests a repo from the GitHub API into a token-budgeted JSON snapshot (file tree, README, key files, commits).",
@@ -198,7 +199,7 @@ const PORTFOLIO = {
       featured: true,
     },
     {
-      name: "Recall — AI Memory Notes App",
+      name: "Recall: AI Memory Notes App",
       year: "2025",
       blurb:
         "An Android notes app built on one idea: information should fade by default, and only ideas that prove their value earn permanence. Capture anything; AI organises it; the right notes resurface at the right time.",
@@ -206,14 +207,14 @@ const PORTFOLIO = {
       highlights: [
         "Multi-modal capture: text with auto-save, voice recording with transcription, and camera OCR via ML Kit.",
         "An LLM pipeline (Claude Haiku) auto-classifies notes into tasks, ideas, references, journal entries, questions and quotes.",
-        "Adaptive memory-decay: notes resurface by relevance, recency and interaction — ideas get boosted after 21 days to incubate.",
+        "Adaptive memory-decay: notes resurface by relevance, recency and interaction, so ideas get boosted after 21 days to incubate.",
         "Semantic search over pgvector embeddings alongside full-text search.",
       ],
       links: { github: "https://github.com/TadhaKM/Memory-App", demo: "" },
       featured: true,
     },
     {
-      name: "ClearMoney — Budget Tracker",
+      name: "ClearMoney: Budget Tracker",
       year: "2026",
       blurb:
         "A full-stack personal-finance app with open-banking sync, automatic transaction categorisation, budgets and spending insights.",
@@ -243,10 +244,10 @@ const PORTFOLIO = {
       featured: false,
     },
     {
-      name: "pmbot — Prediction Market Trading Bot",
+      name: "pmbot: Prediction Market Trading Bot",
       year: "2026",
       blurb:
-        "A production-style bot for trading on Polymarket and Kalshi — paper-trading by default, with Kelly-criterion sizing, risk gates and structured logging.",
+        "A production-style bot for trading on Polymarket and Kalshi, paper-trading by default, with Kelly-criterion sizing, risk gates and structured logging.",
       tags: ["Python", "Pydantic", "Typer", "Quant"],
       highlights: [
         "Modular pipeline: market scanners → probability/category filters → news-sentiment research → predictor → risk gates → executor.",
@@ -258,10 +259,10 @@ const PORTFOLIO = {
       featured: false,
     },
     {
-      name: "PolicyPal — Insurance Policy Analysis",
+      name: "PolicyPal: Insurance Policy Analysis",
       year: "2025",
       blurb:
-        "AI-powered insurance analysis that makes your coverage crystal clear — upload a policy PDF and get a coverage breakdown, gaps, exclusions and next steps. Built for a Tech Ireland event.",
+        "AI-powered insurance analysis that makes your coverage crystal clear: upload a policy PDF and get a coverage breakdown, gaps, exclusions and next steps. Built for a Tech Ireland event.",
       tags: ["JavaScript", "Claude API", "Chart.js", "PDF.js", "Vercel"],
       highlights: [
         "Client-side PDF parsing (PDF.js) feeding a Claude-powered analysis of coverage, limits and exclusions.",
@@ -288,10 +289,10 @@ const PORTFOLIO = {
       featured: false,
     },
     {
-      name: "ELI5 — Explain Like I'm Five",
+      name: "ELI5: Explain Like I'm Five",
       year: "2026",
       blurb:
-        "A chatbot that explains anything at your level — from 'like I'm 5' to full detail — with re-explain and real-world-example shortcuts.",
+        "A chatbot that explains anything at your level, from 'like I'm 5' to full detail, with re-explain and real-world-example shortcuts.",
       tags: ["React", "Vite", "OpenAI API"],
       highlights: [
         "Age-based explanation levels (5 / 10 / 15 / normal) that reshape the answer's depth and vocabulary.",
@@ -319,7 +320,7 @@ const PORTFOLIO = {
       name: "Todo App",
       year: "2025",
       blurb:
-        "A clean, responsive todo list built with React and Vite — add, edit, complete and delete tasks with an optional due date.",
+        "A clean, responsive todo list built with React and Vite: add, edit, complete and delete tasks with an optional due date.",
       tags: ["React", "Vite", "JavaScript"],
       highlights: [
         "Full CRUD task management with a minimal, responsive UI.",
