@@ -34,7 +34,7 @@ const PORTFOLIO = {
     // Quick stat chips under the hero CTAs
     meta: [
       { label: "based in", value: "Dublin, IE" },
-      { label: "studying", value: "B.Sc. CS @ Trinity" },
+      { label: "studying", value: "CS @ Trinity" },
       { label: "started", value: "September 2024" },
       { label: "grad", value: "June 2028" },
     ],
