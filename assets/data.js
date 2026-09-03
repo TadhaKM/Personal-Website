@@ -34,7 +34,8 @@ const PORTFOLIO = {
     // Quick stat chips under the hero CTAs
     meta: [
       { label: "based in", value: "Dublin, IE" },
-      { label: "studying", value: "cs @ Trinity" },
+      { label: "studying", value: "B.Sc. CS @ Trinity" },
+      { label: "started", value: "September 2024" },
       { label: "grad", value: "June 2028" },
     ],
     email: "tmarepalli@gmail.com",
@@ -83,13 +84,32 @@ const PORTFOLIO = {
   experience: [
     {
       type: "work",
+      role: "Software Developer",
+      org: "Trinity AI XR Hub",
+      location: "Dublin, Ireland",
+      start: "Aug 2026",
+      end: "Sep 2026",
+      points: [
+        "Developed a fully offline conversational AI system for the Pollen Robotics Reachy Mini humanoid robot using Python, WebRTC, Whisper, Ollama, and neural TTS, reducing end-to-end response latency from ~12 seconds to under 3 seconds.",
+        "Engineered a real-time speech interface combining wake-word detection, adaptive audio preprocessing, streaming ASR, and Whisper transcription for responsive human–robot interaction.",
+        "Developed and deployed the organisation’s website with responsive UI components, user-facing features, and stakeholder-driven improvements.",
+        "Built emotion-aware speech, gesture control, face tracking, and automatic recovery systems to improve robot reliability and interaction quality.",
+      ],
+      tags: ["Python", "AI", "Robotics", "WebRTC", "Whisper"],
+    },
+    {
+      type: "work",
       role: "Backend AI Engineer Intern",
       org: "FlyRank AI",
       location: "Remote",
       start: "Jul 2026",
-      end: "Present",
-      points: [],
-      tags: ["Backend", "AI"],
+      end: "Aug 2026",
+      points: [
+        "Developed a SaaS platform enabling customers to create embeddable widgets, integrate them through a single script, and securely collect visitor submissions.",
+        "Engineered the backend using Next.js, Supabase, and PostgreSQL, implementing application- and database-level access controls to prevent unauthorised cross-customer data access.",
+        "Developed 70+ automated tests using Vitest, including integration and adversarial security tests, to validate API reliability and resilience against common attack scenarios.",
+      ],
+      tags: ["Backend", "AI", "Next.js", "Supabase", "PostgreSQL", "Testing"],
     },
     {
       type: "leadership",
@@ -173,7 +193,7 @@ const PORTFOLIO = {
       year: "2025",
       blurb:
         "Open-source contributions to IBM's MCP conversational gateway: a semantic search system and a DAG-based agent orchestration engine.",
-      tags: ["Python", "FastAPI", "GraphQL", "SQLAlchemy", "Open Source"],
+      tags: ["Python", "FastAPI", "PostgreSQL", "GraphQL", "SQLAlchemy", "Open Source"],
       highlights: [
         "Designed a semantic search system using embeddings + multi-provider LLM APIs, improving tool discovery and retrieval accuracy.",
         "Built an agent orchestration engine with DAG-based workflows for modular multi-step task execution across services.",
@@ -340,7 +360,7 @@ const PORTFOLIO = {
     },
     {
       group: "Frameworks & Tools",
-      items: ["React", "Next.js", "FastAPI", "GraphQL", "Jetpack Compose", "MySQL", "Supabase", "Git"],
+      items: ["React", "Next.js", "FastAPI", "GraphQL", "Jetpack Compose", "PostgreSQL", "MySQL", "Supabase", "Git"],
     },
     {
       group: "Concepts",
@@ -348,15 +368,15 @@ const PORTFOLIO = {
     },
     {
       group: "Coursework",
-      items: ["Data Structures & Algorithms", "Discrete Mathematics", "Applied Probability", "Concurrent & Operating Systems", "Microprocessor Systems"],
+      items: ["Algorithms & Data Structures", "Systems Programming", "Operating Systems", "Computer Architecture", "Discrete Mathematics", "Applied Probability"],
     },
   ],
 
   /* ----------------------------------------------------------------- CONTACT */
   contact: {
     blurb:
-      "I'm always up for interesting problems or to just talk" +
-      "about AI and good software!. The fastest way to reach me is email.",
+      "I'm always up for interesting problems or to just talk " +
+      "about AI and good software. The fastest way to reach me is email.",
   },
 
   /* -------------------------------------------------------------------- MISC */
